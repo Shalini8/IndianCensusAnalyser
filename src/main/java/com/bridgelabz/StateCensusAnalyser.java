@@ -56,5 +56,6 @@ public class StateCensusAnalyser {
                     "Some other IO related exception");
         }
     }
+
 }
 
