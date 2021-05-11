@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 import com.opencsv.bean.CsvBindByName;
 
-public class StateCensus {
+public class CSVStateCensus {
     @CsvBindByName(column = "State")
     private String stateName;
 
@@ -15,7 +15,7 @@ public class StateCensus {
     @CsvBindByName(column = "DensityPerSqKm", required = true)
     private String densityPerSqKm;
 
-    public StateCensus() {
+    public CSVStateCensus() {
 
     }
 
