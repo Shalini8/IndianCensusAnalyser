@@ -96,6 +96,16 @@ public class CSVStateCensusAnalyserTest {
 
         }
     }
+    @Test
+    public void whenCorrectStateCodeCSVFile_ButHeaderIncorrect_ShouldReturnFalse() throws IOException {
+        try {
+            int count = StateCensusAnalyser.openCsvBuilder(STATECODES_CSVFILE, CSVStates.class);
+        } catch (CensusAnalyserException e) {
+            e.printStackTrace();
+            Assertions.assertEquals(CensusAnalyserException.CensusExceptionType.INCORRECT_DATA_ISSUE, e.type);
+        }
+    }
+
 
 }
 
