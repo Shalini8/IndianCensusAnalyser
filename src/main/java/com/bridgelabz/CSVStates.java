@@ -3,7 +3,7 @@ package com.bridgelabz;
 import com.opencsv.bean.CsvBindByName;
 
 public class CSVStates {
-    @CsvBindByName(column = "SrNo")
+    @CsvBindByName(column = "SrNo",required = true)
     private String sr_No;
 
     @CsvBindByName(column = "StateName")
